@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Veterinaria Patitas Felices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Veterinaria Patitas Felices">
+        </div>
+        <div class="menu-container">
+            <div class="menu-icon" id="menu-button">
+                <img src="patita.png" alt="Patita Menu">
+                <span>Menu</span>
+            </div>
+            <div class="menu-options">
+                <a href="#inicio" class="menu-btn"><i class="fas fa-home"></i><span>Inicio</span></a>
+                <a href="#servicios" class="menu-btn"><i class="fas fa-dog"></i><span>Servicios</span></a>
+                <a href="#contacto" class="menu-btn"><i class="fas fa-envelope"></i><span>Contacto</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección "Sobre Nosotros" con duplicado y flechas de navegación -->
+    <section class="carousel-container">
+        <!-- Flecha para retroceder -->
+        <a class="prev" id="prev-section"><i class="fas fa-chevron-left"></i></a>
+
+        <!-- Contenedor de las secciones "Sobre Nosotros" -->
+        <div class="carousel">
+            <!-- Primera sección "Sobre Nosotros" -->
+            <div class="about-section" id="section1">
+                <div class="about-content">
+                    <h2>Mas que una mascota un miembro de la familia</h2>
+                    <p>En Veterinaria Patitas Felices, brindamos un servicio profesional y apasionado por el bienestar de tus mascotas.</p>
+                </div>
+                <div class="about-image">
+                    <img src="mascotas-felices.jpg" alt="Mascotas Felices">
+                </div>
+            </div>
+
+            <!-- Segunda sección "Sobre Nosotros" (duplicada) -->
+            <div class="about-section" id="section2">
+                <div class="about-content">
+                    <h2>Servicio de Peluqueria</h2>
+                    <p>Dale a tu perro un tratamiento de spa, con nuestros servicios de peluqueria canina profesional</p>
+                </div>
+                <div class="about-image">
+                    <img src="mascotas-felices-2.jpg" alt="Más Mascotas Felices">
+                </div>
+            </div>
+        </div>
+
+        <!-- Flecha para avanzar -->
+        <a class="next" id="next-section"><i class="fas fa-chevron-right"></i></a>
+    </section>
+
+    <!-- Sección "Servicios" -->
+    <section id="servicios" class="services-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <img src="consulta.jpg" alt="Consultas">
+                <h3>Consultas Veterinarias</h3>
+                <p>Ofrecemos consultas completas para el bienestar de tu mascota.</p>
+            </div>
+            <div class="service-box">
+                <img src="vacunacion.jpg" alt="Vacunación">
+                <h3>Vacunación</h3>
+                <p>Vacunamos a tus mascotas para protegerlas de enfermedades comunes.</p>
+            </div>
+            <div class="service-box">
+                <img src="cirugia.jpg" alt="Cirugías">
+                <h3>Cirugías Especializadas</h3>
+                <p>Realizamos cirugías con el mejor equipo y cuidado para tu mascota.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Por qué elegirnos?" -->
+    <section id="porque-elegirnos" class="why-choose-us">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Un cachorro es una decisión de vida. No dejes que tus cuidados se pierdan con las personas equivocadas.</p>
+    </section>
+
+    <!-- Sección "Contáctanos" (Formulario) -->
+    <section id="contacto" class="contact-form">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section nosotros">
+                <h3>Nosotros</h3>
+                <p>En Veterinaria Patitas Felices, cuidamos de tus mascotas con dedicación y amor. Brindamos servicios especializados para su bienestar.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="https://co.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section enlaces">
+                <h3>Enlaces sugeridos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicio">Serivicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section tienda">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="#servicio">Consultas Veterinarias</a></li>
+                    <li><a href="#servicio">Vacunación</a></li>
+                    <li><a href="#servicio">Cirugías</a></li>
+                    <li><a href="servicio">Tienda para Mascotas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contactanos">
+                <h3>Contáctanos</h3>
+                <p><i class="fas fa-map-marker-alt"></i>km 5 via girardot tocaima, Girardot</p>
+                <p><i class="fas fa-phone"></i> 3217005069</p>
+                <p><i class="fas fa-envelope"></i> contacto@veterinaria.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Veterinaria Patitas Felices. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
